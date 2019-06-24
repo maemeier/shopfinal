@@ -1,5 +1,5 @@
 // Database
-const db = require('../db')
+const db = require('../db');
 
 module.exports = (req, res) => {
 	db.query(`SELECT * FROM categories`, (err, result) => {
@@ -8,5 +8,5 @@ module.exports = (req, res) => {
 		} else {
 			res.send(result.rows)
 		}
-	})
-}
+	});
+};
