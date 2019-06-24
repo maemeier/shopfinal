@@ -3,7 +3,7 @@ const {Client} = require('pg')
 
 // create connection
 const db = new Client({
-	connectionString: 'postgres://orasaoneal:@localhost:5432/shop'
+	connectionString: 'postgres://maemeier:karate31@localhost:5432/shop'
 })
 
 // connect to database

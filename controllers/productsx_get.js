@@ -2,7 +2,8 @@
 const db = require('../db')
 
 module.exports = (req, res) => {
-	db.query(`SELECT * FROM products`, (err, result) => {
+	// console.log('request', req.prams.id);
+	db.query(`SELECT * FROM products WHERE category = ${req.params.id}`, (err, result) => {
 		if (err) {
 			console.log('err', err)
 		} else {

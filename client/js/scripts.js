@@ -1,3 +1,8 @@
+
+axios.get(http://localhost:3000/api/products) .then(res) => {
+  console.log('res', res.data);
+  // let products = res.data
+}
 console.log("Hello from JS");
 // document.console.log(document);
 
